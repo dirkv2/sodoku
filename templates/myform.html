@@ -1,0 +1,147 @@
+<form method=post action="">
+    <head>
+        <style>
+        input[type=text] {
+            background-color: darkblue;
+            color: white;
+            text-align:center
+        }
+    </style>
+    </head>
+    <body style="background-color:darkblue;color:white;">
+    <br>
+    <h2>Sodoku Solver</h2>
+    <table border="5">
+    <tbody>
+        <tr>
+            <td><input name=r00 type=text size="1" maxlength="1"></td>
+            <td><input name=r01 type=text size="1" maxlength="1"></td>
+            <td><input name=r02 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r03 type=text size="1" maxlength="1"></td>
+            <td><input name=r04 type=text size="1" maxlength="1"></td>
+            <td><input name=r05 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r06 type=text size="1" maxlength="1"></td>
+            <td><input name=r07 type=text size="1" maxlength="1"></td>
+            <td><input name=r08 type=text size="1" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td><input name=r10 type=text size="1" maxlength="1"></td>
+            <td><input name=r11 type=text size="1" maxlength="1"></td>
+            <td><input name=r12 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r13 type=text size="1" maxlength="1"></td>
+            <td><input name=r14 type=text size="1" maxlength="1"></td>
+            <td><input name=r15 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r16 type=text size="1" maxlength="1"></td>
+            <td><input name=r17 type=text size="1" maxlength="1"></td>
+            <td><input name=r18 type=text size="1" maxlength="1"></td>
+        </tr>
+            <tr>
+            <td><input name=r20 type=text size="1" maxlength="1"></td>
+            <td><input name=r21 type=text size="1" maxlength="1"></td>
+            <td><input name=r22 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r23 type=text size="1" maxlength="1"></td>
+            <td><input name=r24 type=text size="1" maxlength="1"></td>
+            <td><input name=r25 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r26 type=text size="1" maxlength="1"></td>
+            <td><input name=r27 type=text size="1" maxlength="1"></td>
+            <td><input name=r28 type=text size="1" maxlength="1"></td>
+        </tr>
+        <tr><td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+        </tr>
+            <tr>
+            <td><input name=r30 type=text size="1" maxlength="1"></td>
+            <td><input name=r31 type=text size="1" maxlength="1"></td>
+            <td><input name=r32 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r33 type=text size="1" maxlength="1"></td>
+            <td><input name=r34 type=text size="1" maxlength="1"></td>
+            <td><input name=r35 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r36 type=text size="1" maxlength="1"></td>
+            <td><input name=r37 type=text size="1" maxlength="1"></td>
+            <td><input name=r38 type=text size="1" maxlength="1"></td>
+        </tr>
+            <tr>
+            <td><input name=r40 type=text size="1" maxlength="1"></td>
+            <td><input name=r41 type=text size="1" maxlength="1"></td>
+            <td><input name=r42 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r43 type=text size="1" maxlength="1"></td>
+            <td><input name=r44 type=text size="1" maxlength="1"></td>
+            <td><input name=r45 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r46 type=text size="1" maxlength="1"></td>
+            <td><input name=r47 type=text size="1" maxlength="1"></td>
+            <td><input name=r48 type=text size="1" maxlength="1"></td>
+        </tr>
+            <tr>
+            <td><input name=r50 type=text size="1" maxlength="1"></td>
+            <td><input name=r51 type=text size="1" maxlength="1"></td>
+            <td><input name=r52 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r53 type=text size="1" maxlength="1"></td>
+            <td><input name=r54 type=text size="1" maxlength="1"></td>
+            <td><input name=r55 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r56 type=text size="1" maxlength="1"></td>
+            <td><input name=r57 type=text size="1" maxlength="1"></td>
+            <td><input name=r58 type=text size="1" maxlength="1"></td>
+        </tr>
+        <tr><td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+            <td bgcolor="grey"></td>
+        </tr>
+            <td><input name=r60 type=text size="1" maxlength="1"></td>
+            <td><input name=r61 type=text size="1" maxlength="1"></td>
+            <td><input name=r62 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r63 type=text size="1" maxlength="1"></td>
+            <td><input name=r64 type=text size="1" maxlength="1"></td>
+            <td><input name=r65 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r66 type=text size="1" maxlength="1"></td>
+            <td><input name=r67 type=text size="1" maxlength="1"></td>
+            <td><input name=r68 type=text size="1" maxlength="1"></td>
+        </tr>
+            <tr>
+            <td><input name=r70 type=text size="1" maxlength="1"></td>
+            <td><input name=r71 type=text size="1" maxlength="1"></td>
+            <td><input name=r72 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r73 type=text size="1" maxlength="1"></td>
+            <td><input name=r74 type=text size="1" maxlength="1"></td>
+            <td><input name=r75 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r76 type=text size="1" maxlength="1"></td>
+            <td><input name=r77 type=text size="1" maxlength="1"></td>
+            <td><input name=r78 type=text size="1" maxlength="1"></td>
+        </tr>
+            <tr>
+            <td><input name=r80 type=text size="1" maxlength="1"></td>
+            <td><input name=r81 type=text size="1" maxlength="1"></td>
+            <td><input name=r82 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r83 type=text size="1" maxlength="1"></td>
+            <td><input name=r84 type=text size="1" maxlength="1"></td>
+            <td><input name=r85 type=text size="1" maxlength="1"></td><td style="width:1%" bgcolor="grey"></td>
+            <td><input name=r86 type=text size="1" maxlength="1"></td>
+            <td><input name=r87 type=text size="1" maxlength="1"></td>
+            <td><input name=r88 type=text size="1" maxlength="1"></td>
+        </tr>
+    </tbody>
+    </table>
+    <br>
+    Written using Python, Flask, and Google App Engine by Dirk Verhoeven.
+    <br>
+    <br>
+    <input name=text type=submit>
+    </body>
+</form>
+
